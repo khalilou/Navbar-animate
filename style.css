@@ -23,3 +23,28 @@ main article:target {
 main article[data-previous] {
     animation: close 1s forwards;
 }
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    background:#000;
+}
+
+#p1 {
+    background: green;
+}
+
+#p2 {
+    background: blue;
+}
+
+#p3 {
+    background:red;
+}
+
+@keyframes close {
+    0% { top: 0; }
+    99% {top: 100vh;}
+    100% {top:-100vh;}
+}
